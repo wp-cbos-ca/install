@@ -18,6 +18,7 @@ function run_core_install_procedures() {
     }
 
     update_option( 'blogname', $site['blog_title'] );
+    update_option( 'blogdescription', $site['blogdescription'] );
     update_option( 'admin_email', $site['user_email'] );
     update_option( 'blog_public', $site['blog_public'] );
 

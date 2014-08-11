@@ -2,7 +2,8 @@
 function get_site_data() {
     $site = array(
         'blog_title' => 'Blog Title',
-        'blog_public' => 'Blog Public',
+        'blogdescription' => 'Just Another WordPress Bundle',
+        'blog_public' => 0,
         'siteurl' => '',
         'user_name' => 'user_name',
         'user_email' => 'user_email',
@@ -10,4 +11,5 @@ function get_site_data() {
     );
     return $site;
 }
+
 ?>

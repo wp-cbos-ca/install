@@ -22,6 +22,7 @@
 function get_required_install_files() {
     require_once dirname(__FILE__) . '/scripts/defaults.php';
     require_once dirname(__FILE__) . '/scripts/site/site.php';
+    //require_once dirname(__FILE__) . '/scripts/settings/settings.php';
     require_once dirname(__FILE__) . '/scripts/functions.php';
     require_once dirname(__FILE__) . '/scripts/clean/clean.php';
     require_once dirname(__FILE__) . '/scripts/users/users.php';
@@ -72,10 +73,7 @@ function wp_install_defaults( $user_id = 1 ) {
     global $wpdb, $wp_rewrite, $current_site, $table_prefix;
     
     update_option( 'start_of_week', 0 ); // Start of the Week 0 (Sunday) 1 (Monday)
-    update_option( 'blogdescription', 'Wireframe&ndash;Content&ndash;Design&ndash;Install' );
-    update_option( 'template', 'genesis' );
-    update_option( 'stylesheet', 'genesis+child' );
-    update_option( 'uploads_use_yearmonth_folders', 0 ); // Don't Organize Uploads by Date
+    update_option( 'uploads_use_yearmonth_folders', 1 ); // Don't Organize Uploads by Date
     update_option( 'selection', 'postname' );
     update_option( 'page_on_front', 1 );
     update_option( 'page_for_posts', 3 );
